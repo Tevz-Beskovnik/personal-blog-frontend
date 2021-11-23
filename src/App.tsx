@@ -6,9 +6,10 @@ import './App.css';
 
 const App: FC = () => {
   return (
-    <div className="App">
+    <div className="body">
       <Router>
-
+        <Nav/>
+        <Body/>
       </Router>
     </div>
   );
