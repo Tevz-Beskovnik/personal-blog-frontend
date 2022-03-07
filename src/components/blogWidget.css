@@ -1,0 +1,5 @@
+.glass-card::after{
+    background-color: linear-gradient(130.22deg, #ffffff 13%, #efefef);
+    opacity: 50%;
+    border: 1px solid silver;
+}

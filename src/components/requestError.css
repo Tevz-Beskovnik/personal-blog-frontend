@@ -1,0 +1,23 @@
+.error-container{
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 24px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.error-code{
+    font-size: xx-large;
+    color: #ffdddd;
+    font-family: 'Nunito-Bold';
+    text-align: center;
+}
+
+.error-message{
+    font-size: large;
+    color: #ffffff;
+    font-family: 'Nunito';
+    text-align: center;
+}

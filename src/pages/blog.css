@@ -1,0 +1,5 @@
+.card-container{
+    padding: 120px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+}

@@ -6,7 +6,7 @@ import './App.css';
 
 const App: FC = () => {
   return (
-    <div className="body">
+    <div className="main-container">
       <Router>
         <Nav/>
         <Body/>
