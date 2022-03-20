@@ -23,17 +23,18 @@ export const ActiveLink = styled.a<PropsActiveLink>`
     font-size: xx-large;
     color: ${ props => props.active ? props.activeColor : props.passiveColor };
     font-family: 'Nunito-Bold';
-    opacity: 60%;
+    opacity: ${props => props.active ? "100%" : "70%"};
     margin: 0;
     text-decoration: none;
     transition: 0.5s;
 
     :hover{
-        opacity: 80%;
-        color: white;
+        opacity: 100%;
+        color: var(--font-color);
     }
 `;
 
 export const Visibile = styled.div<PropsVisibile>`
+    position: ${ props => props.visible ? "relative" : "absolute" };
     opacity: ${ props => props.visible ? "100%" : "0%" };
 `;

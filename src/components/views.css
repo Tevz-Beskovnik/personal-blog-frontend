@@ -1,0 +1,16 @@
+.views-container{
+    display: flex;
+    flex-flow: row;
+    width: 100% !important;
+    align-items: center;
+    justify-content: flex-end;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Nunito-Bold';
+    padding: 5px 7px;
+}
+
+.views-count{
+    margin-right: 12px;
+    font-size: 12px;
+}

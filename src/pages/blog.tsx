@@ -4,10 +4,10 @@ import { getRequest } from "../requestHandlers/get.request";
 import BlogContainer from "../components/blogContainer.component";
 import { BlogInterface } from "../types/post.interface";
 import { ReqError } from "../types/requestError.interface";
-import "./blog.css";
 import RequestError from "../components/requestError.component";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import SyntaxHighlight from "../components/syntaxHighlight.component";
 
 const Blog: FC = () => {
     // the *brand spankin new version* uses syntax for use param like bellow and not useParams<{id: string}>(); (witch is nice :) )
@@ -25,14 +25,14 @@ const Blog: FC = () => {
     }, []);   
 
     return (
-        <div className="card-container">
+        <>
             {post && ('error' in post) && (
                 <RequestError errorCode={post.statusCode} errorMessage={post.message} />
             )}
             {post && !('error' in post) && (
-                <BlogContainer id={post.id} title={post.title} date={post.date} views={post.views} childComp={<ReactMarkdown children={post.content} remarkPlugins={[remarkGfm]}/>}/>
+                <BlogContainer id={post.id} description={post.description} title={post.title} date={post.date} views={post.views} childComp={<ReactMarkdown components={SyntaxHighlight} children={post.content} remarkPlugins={[remarkGfm]}/>}/>
             )}
-        </div>
+        </>
     );
 }
 

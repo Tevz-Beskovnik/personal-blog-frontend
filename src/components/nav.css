@@ -1,5 +1,6 @@
 nav {
     position: fixed;
+    grid-area: header;
     width: 100%;
 }
 
@@ -29,7 +30,7 @@ p{
 
 #logo-text{
     font-size: xx-large;
-    color: #ffffff;
+    color: var(--font-color);
     font-family: 'Nunito-Bold';
     opacity: 60%;
     margin: 0;
@@ -37,19 +38,20 @@ p{
 }
 
 #logo-text:focus{
-    color: #ffffff;
+    color: var(--font-color);
 }
 
 #logo-underline{
-    border: 1px solid white;
+    border: 1px solid var(--font-color);
     border-radius: 24px;
-    background-color: white;
-    opacity: 60%;
+    background-color: var(--font-color);
+    opacity: 100%;
     height: 5px;
+    margin: 0 5px;
     width: 50%;
 }
 
-#selection-container{
+.selection-container{
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -66,36 +68,51 @@ p{
 }
 
 #divider{
-    margin: 20px;
+    margin: 10px;
     font-family: 'Nunito';
     font-size: large;
-    color: #eee;
+    color: var(--font-color);
     opacity: 70%;
+}
+
+.flex-selection::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    position: absolute;
+    opacity: 0.2;
+    background: var(--font-color);
+    box-shadow: inset 0 0 4000px rgba(255, 255, 255, .5);
 }
 
 .flex-selection
 {
     display: flex;
     flex-flow: row;
+    position: relative;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .feed-selector
 {
+    margin: 10px 0;
+    z-index: 100;
     font-family: "Nunito";
-    color: #eee;
+    color: var(--font-color);
     text-decoration: none;
     transition: 0.5s;
 }
 
 .feed-selector:focus
 {
-    color: #eee;
+    color: var(--font-color);
 }
 
 .feed-selector:hover
 {
-    color: white;
+    color: var(--font-color);
     transition: 0.5s;
 }

@@ -1,9 +1,15 @@
 .main-container{
   margin: 0;
   padding: 0;
-  background: linear-gradient(130.22deg, #46D4A0 13%, #46B0D4);
   height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'main main main main main';
+  /*display: flex;
+  flex-flow: column;*/
   font-family: 'Nunito', 'Courier New', Courier, monospace;
 }
 

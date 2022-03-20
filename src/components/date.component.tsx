@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DateContainer = styled.time`
-    color: #eee;
+    color: var(--font-color);
     font-family: "Nunito-Bold";
     font-size: 22px;
     margin-left: auto;
@@ -9,7 +9,7 @@ export const DateContainer = styled.time`
     transition: 0.5s;
 
     &:hover {
-        color: white;
+        color: var(--font-color);
         transition: 0.5s;
     }
 `;

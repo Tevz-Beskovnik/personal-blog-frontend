@@ -2,7 +2,7 @@ import { BlogInterface, Post } from "../types/post.interface";
 import { SignIn, AccessToken } from "../types/signin.interface";
 import { ReqError } from "../types/requestError.interface";
 
-export async function getRequest(url: string, headers?: HeadersInit | undefined): Promise<BlogInterface | Post | SignIn | AccessToken | ReqError | any>
+export async function getRequest(url: string, headers?: HeadersInit | undefined): Promise<BlogInterface | BlogInterface[] | Post | SignIn | AccessToken | ReqError | any>
 {
     const requestOptions: RequestInit = {
         method: "GET",
