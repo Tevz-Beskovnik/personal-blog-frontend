@@ -19,7 +19,9 @@ const BlogContainer: FC<Post> = ({ id, title, description, date, views, childCom
                 <div className="markdown-container">
                     {childComp}
                 </div>
-                <DateContainer dateTime={date}>{date}</DateContainer>
+                <div className="date-container">
+                    <DateContainer dateTime={date}>{date}</DateContainer>
+                </div>
             </div>
         </div>
     );
