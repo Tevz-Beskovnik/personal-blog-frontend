@@ -14,10 +14,6 @@
     font-size: 2rem;
 }
 
-#contact {
-
-}
-
 .about-main-info{
     margin: 7px 0;
     color: var(--font-color);
@@ -45,6 +41,7 @@
 }
 
 section {
+    margin-left: 50px;
     display: none;
     opacity: 0;
 }
@@ -61,7 +58,7 @@ input[type="radio"] {
 
     to {
         opacity: 100%;
-        margin: 0;
+        margin-top: 0;
     }
 }
 
@@ -116,8 +113,7 @@ input[type='radio']#section4:checked ~ #contact {
 .home-content{
     display: flex;
     align-items: center;
-    margin-left: 50px;
-    width: 95%;
+    width: 100%;
     height: 90%;
 }
 
@@ -150,6 +146,7 @@ input[type='radio']#section4:checked ~ #contact {
 
 .selectors {
     margin-left: auto;
+    margin-right: 17px;
 }
 
 .radio-button{
@@ -192,11 +189,44 @@ input[type='radio']#section4:checked ~ #contact {
     }
 
     .home-content{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        margin: 20px 50px;
+        margin: 20px 0;
         width: 90%;
-        height: 90%;
+        height: 100%;
+    }
+
+    section {
+        margin-top: 90px;
+        height: 100%;
+    }
+
+    @keyframes floatin {
+        from {
+            opacity: 0;
+            margin-top: 210px;
+        }
+    
+        to {
+            opacity: 100%;
+            margin-top: 90px;
+        }
+    }
+
+    .selectors {
+        position: fixed;
+        margin-left: 30px;
+        width: 50%;
+        display: flex;
+        flex-flow: row;
+        z-index: 1000;
+        left: 115px;
+        top: 32px;
+    }
+
+    .about-main-info {
+        margin-left: 21px
+    }
+
+    .recent-repo-wrapper {
+        flex-flow: column;
     }
 }

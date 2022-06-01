@@ -71,6 +71,18 @@ body{
     background-attachment: fixed;
 }
 
+
 #root{
 	height: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+	body{
+		min-height: 100%;
+		height: 100%;
+	}
+
+	#root {
+		height: auto
+	}
 }

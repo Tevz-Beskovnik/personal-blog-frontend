@@ -10,9 +10,9 @@ const Body: FC = () => {
     return (
         <Switch>
             <Route path="/" element={ <Home/> }/>
-            <Route path="/landing" element={ <Landing/> }/>
+            {/*<Route path="/landing" element={ <Landing/> }/>
             <Route path="/blog/:id" element={ <Blog/> }/>
-            <Route path="/blog/top" element= { <Top/> }/>
+            <Route path="/blog/top" element= { <Top/> }/>*/}
         </Switch>
     );
 };

@@ -42,7 +42,9 @@ const Home: FC = () => {
     }, []);
 
     const diff = new Date().getTime() -  new Date("07/02/2003").getTime();
+    const diff1 = new Date().getTime() -  new Date("01/01/2019").getTime();
     const end = Math.floor(diff / 1000 / 3600 / 24 / 365);
+    const end1 = Math.floor(diff1 / 1000 / 3600 / 24 / 365);
 
     return (
         <div className="home-main">
@@ -96,7 +98,8 @@ const Home: FC = () => {
                     <h1 className="about-main-title">A little about me:</h1>
                     <p className="about-main-info">I'm a { end } year old amateur developer based in Slovenia, that likes to play around with web development, computer graphics and the espressif platform.</p>
                     <p className="about-main-info">I currently study at <a className="about-link" href="https://sers.si/">SERŠ</a>, the middle school for electronics and computer science in Maribor. I am currently attending the 4th year of education.</p>
-                    <p className="about-main-info">I'm experienced with Vue.js, React.js, Nest.js and GO backend development.</p>
+                    <p className="about-main-info">As of now i have { end1 } years of experience as a fullstack developer.</p>
+                    <p className="about-main-info">I work with Vue.js, React.js, Nest.js and GO backend development.</p>
                     <p className="about-main-info">I have experience with programing microcontrollers: ESP32, Arduino and Pi Pico. I have also spent some time on OS development.</p>
                     <p className="about-main-info">I've studied computer graphics, rendering and made a very simple game engine / rendering <a className="about-link" href="https://github.com/Tevzi2/Zwet-engine">tool</a></p>
                 </section>

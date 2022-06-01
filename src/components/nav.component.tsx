@@ -17,6 +17,10 @@ export const NavElement = styled.div<PropsNavElement>`
     flex: ${ props => props.flex ? props.flex : "auto"};
     margin-left: ${ props => props.left ? "auto" : "10px"};
     margin-right: ${ props => props.right ? "auto" : "10px"};
+
+    @media only screen and (max-width: 480px) {
+        margin-left: 40px;
+    }
 `;
 
 export const ActiveLink = styled.a<PropsActiveLink>`

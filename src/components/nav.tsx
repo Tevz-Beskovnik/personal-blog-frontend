@@ -13,12 +13,12 @@ const Nav: FC = () => {
                     <div id="logo-container">
                         <div id="logo-text-container">
                             <ActiveLink active={ pathname === "/" } activeColor="var(--font-color)" passiveColor="var(--font-color)" href={process.env.REACT_APP_FRONTEND_ADDRESS}>ZVET</ActiveLink>
-                            <ActiveLink active={ pathname === "/landing" } activeColor="var(--font-color)" passiveColor="var(--font-color)" href={process.env.REACT_APP_FRONTEND_ADDRESS + "landing"}>BLOG</ActiveLink>
+                            {/*<ActiveLink active={ pathname === "/landing" } activeColor="var(--font-color)" passiveColor="var(--font-color)" href={process.env.REACT_APP_FRONTEND_ADDRESS + "landing"}>BLOG</ActiveLink>*/}
                         </div>
                         <div id="logo-underline"></div>
                     </div>
                 </NavElement>
-                <NavElement width="100px" height="100%" left="" flex="7">
+                {/*<NavElement width="100px" height="100%" left="" flex="7">
                     <Visibile visible={ pathname === "/landing" }>
                         <div className="selection-container">
                             <div className="flex-selection">
@@ -30,7 +30,7 @@ const Nav: FC = () => {
                             </div>
                         </div>
                     </Visibile>
-                </NavElement>
+                </NavElement>*/}
             </NavBar>
         </nav>
     );
