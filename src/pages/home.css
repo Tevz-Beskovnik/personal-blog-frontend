@@ -197,6 +197,7 @@ input[type='radio']#section4:checked ~ #contact {
     section {
         margin-top: 90px;
         height: 100%;
+        opacity: 100%;
     }
 
     @keyframes floatin {
