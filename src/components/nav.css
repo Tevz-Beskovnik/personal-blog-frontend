@@ -33,7 +33,7 @@ p{
     font-size: xx-large;
     color: var(--font-color);
     font-family: 'Nunito-Bold';
-    opacity: 60%;
+    opacity: 0.6;
     margin: 0;
     text-decoration: none;
 }
@@ -46,7 +46,7 @@ p{
     border: 1px solid var(--font-color);
     border-radius: 24px;
     background-color: var(--font-color);
-    opacity: 100%;
+    opacity: 1;
     height: 5px;
     margin: 0 5px;
     width: 38%;
@@ -73,7 +73,7 @@ p{
     font-family: 'Nunito';
     font-size: large;
     color: var(--font-color);
-    opacity: 70%;
+    opacity: 0.7;
 }
 
 .flex-selection::before{

@@ -57,7 +57,7 @@ input[type="radio"] {
     }
 
     to {
-        opacity: 100%;
+        opacity: 1;
         margin-top: 0;
     }
 }
@@ -71,7 +71,7 @@ input[type='radio']#section1:checked ~ #home {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     display: inline;
-    opacity: 100%;
+    opacity: 1;
 }
 
 input[type='radio']#section2:checked ~ .selectors label[for="section2"] {
@@ -83,7 +83,7 @@ input[type='radio']#section2:checked ~ #about {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     display: inline;
-    opacity: 100%;
+    opacity: 1;
 }
 
 input[type='radio']#section3:checked ~ .selectors label[for="section3"] {
@@ -95,7 +95,7 @@ input[type='radio']#section3:checked ~ #recent {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     display: inline;
-    opacity: 100%;
+    opacity: 1;
 }
 
 input[type='radio']#section4:checked ~ .selectors label[for="section4"] {
@@ -107,7 +107,7 @@ input[type='radio']#section4:checked ~ #contact {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     display: inline;
-    opacity: 100%;
+    opacity: 1;
 }
 
 .home-content{
@@ -197,7 +197,7 @@ input[type='radio']#section4:checked ~ #contact {
     section {
         margin-top: 90px;
         height: 100%;
-        opacity: 100%;
+        opacity: 1;
     }
 
     @keyframes floatin {
@@ -207,7 +207,7 @@ input[type='radio']#section4:checked ~ #contact {
         }
     
         to {
-            opacity: 100%;
+            opacity: 1;
             margin-top: 90px;
         }
     }
