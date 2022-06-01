@@ -5,18 +5,9 @@ const initState: Repo[] = [];
 const repoReducer = (state: any = initState, action: any) => {
     switch (action.type){
         case "repos": {
-            let currentRepo: Repo = action.payload[0];
-            let currentSmallest: Date = new Date();
-            const currentDate: Date = new Date();
-            action.payload.forEach((element: Repo) => {
-                const elementDate: Date = new Date(element.updated_at);
-                if(currentDate.getTime() - elementDate.getTime() < currentSmallest.getTime())
-                {
-                    currentSmallest = new Date(currentDate.getTime() - elementDate.getTime());
-                    currentRepo = element;
-                }
-            });
-            return currentRepo;
+            return action.payload.sort((o1: Repo, o2: Repo) => {
+                return new Date(o1.updated_at).getTime() - new Date(o2.updated_at).getTime();
+            }).reverse();
         }
         default:
             return state;

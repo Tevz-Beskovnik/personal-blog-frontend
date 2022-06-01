@@ -30,13 +30,6 @@ const Nav: FC = () => {
                             </div>
                         </div>
                     </Visibile>
-                    <Visibile visible={ pathname === "/" }>
-                        <div className="selection-container">
-                            <div className="flex-selection">
-                                <a href="./about" className="feed-selector">About</a>
-                            </div>
-                        </div>
-                    </Visibile>
                 </NavElement>
             </NavBar>
         </nav>

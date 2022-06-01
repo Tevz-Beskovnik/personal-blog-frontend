@@ -2,7 +2,7 @@ import React, { FC, useEffect, useState } from "react";
 import BlogWidget from "../components/blogWidget.component";
 import RequestError from "../components/requestError.component";
 import { getRequest } from "../requestHandlers/get.request";
-import { BlogInterface, PostPreview } from "../types/post.interface";
+import { PostPreview } from "../types/post.interface";
 import { ReqError } from "../types/requestError.interface";
 import './landing.css';
 

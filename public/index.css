@@ -1,8 +1,10 @@
 :root {
-	--font-color: #1d2059;
+	--font-color: white;
 	--background-color-p: white;
 	--background-color-s: #aeaeee;
 	--background-color-t: #9c1fa5;
+	--background-color-as: #e09966;
+	--background-color-at: #ed6f39;
 	--link-color: rgb(88, 166, 255);
 	--javascript: #f1e05a;
 	--typescript: #2b7489;
@@ -13,37 +15,37 @@
 
 @font-face {
   	font-family: "Nunito-Black";
-  	src: url(http://localhost:3001/Nunito-Black.ttf) format("truetype");
+  	src: url(./Nunito-Black.ttf) format("truetype");
 }
 
 @font-face {
   	font-family: "Nunito-Bold";
-  	src: url(http://localhost:3001/Nunito-Bold.ttf) format("truetype");
+  	src: url(./Nunito-Bold.ttf) format("truetype");
 }
 
 @font-face {
   	font-family: "Nunito-Extra-Bold";
-  	src: url(http://localhost:3001/Nunito-ExtraBold.ttf) format("truetype");
+  	src: url(./Nunito-ExtraBold.ttf) format("truetype");
 }
 
 @font-face {
   	font-family: "Nunito-Extra-Light";
-  	src: url(http://localhost:3001/Nunito-ExtraLight.ttf) format("truetype");
+  	src: url(./Nunito-ExtraLight.ttf) format("truetype");
 }
 
 @font-face {
   	font-family: "Nunito-Light";
-  	src: url(http://localhost:3001/Nunito-Light.ttf) format("truetype");
+  	src: url(./Nunito-Light.ttf) format("truetype");
 }
 
 @font-face {
   	font-family: "Nunito";
-  	src: url(http://localhost:3001/Nunito-Regular.ttf) format("truetype");
+  	src: url(./Nunito-Regular.ttf) format("truetype");
 }
 
 @font-face {
   	font-family: "Nunito-Semi-Bold";
-  	src: url(http://localhost:3001/Nunito-SemiBold.ttf) format("truetype");
+  	src: url(./Nunito-SemiBold.ttf) format("truetype");
 }
 
 html{
@@ -54,13 +56,18 @@ html{
 }
 
 body{
+	--bg: linear-gradient(cyan, transparent ), linear-gradient(-45deg, magenta, transparent), linear-gradient(45deg, yellow, transparent);
+	--blend: multiply;
     margin: 0;
     padding: 0;
 	min-height: 100%;
 	height: 100vh;
     width: 100vw;
-	background: linear-gradient(130.22deg, var(--background-color-p), var(--background-color-s) 70%, var(--background-color-t) 90%);
+	background: var(--bg);
+	animation-name: var(--anim);
+	animation-duration: 0.7s;
 	background-repeat: no-repeat;
+	background-blend-mode: var(--blend);
     background-attachment: fixed;
 }
 

@@ -3,19 +3,128 @@
     height: 100%;
 }
 
+#about {
+    width: 70%;
+}
+
+.about-main-title{
+    margin-left: 24px;
+    color: var(--font-color);
+    font-family: 'Nunito-Bold';
+    font-size: 2rem;
+}
+
+#contact {
+
+}
+
+.about-main-info{
+    margin: 7px 0;
+    color: var(--font-color);
+    font-family: 'Nunito-Semi-Bold';
+    font-size: 1.2rem;
+    margin-left: 34px;
+}
+
+.about-link{
+    font-family: 'Nunito-Bold';
+    font-size: 1.2rem;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.about-link:hover{
+    text-decoration: underline;
+}
+
+.about-link:focus{
+    font-family: 'Nunito';
+    font-size: large;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+section {
+    display: none;
+    opacity: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+@keyframes floatin {
+    from {
+        opacity: 0;
+        margin-top: 120px;
+    }
+
+    to {
+        opacity: 100%;
+        margin: 0;
+    }
+}
+
+input[type='radio']#section1:checked ~ .selectors label[for="section1"] {
+    background-color: var(--font-color);
+}
+
+input[type='radio']#section1:checked ~ #home {
+    animation-name: floatin;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    display: inline;
+    opacity: 100%;
+}
+
+input[type='radio']#section2:checked ~ .selectors label[for="section2"] {
+    background-color: var(--font-color);
+}
+
+input[type='radio']#section2:checked ~ #about {
+    animation-name: floatin;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    display: inline;
+    opacity: 100%;
+}
+
+input[type='radio']#section3:checked ~ .selectors label[for="section3"] {
+    background-color: var(--font-color);
+}
+
+input[type='radio']#section3:checked ~ #recent {
+    animation-name: floatin;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    display: inline;
+    opacity: 100%;
+}
+
+input[type='radio']#section4:checked ~ .selectors label[for="section4"] {
+    background-color: var(--font-color);
+}
+
+input[type='radio']#section4:checked ~ #contact {
+    animation-name: floatin;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    display: inline;
+    opacity: 100%;
+}
+
 .home-content{
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    margin: 40px 50px;
-    width: 90%;
+    align-items: center;
+    margin-left: 50px;
+    width: 95%;
     height: 90%;
 }
 
 .home-main-title{
     font-family: 'Nunito-Extra-Bold';
     color: var(--font-color);
-    font-size: 64px;
+    font-size: 4rem;
     margin: 0;
 }
 
@@ -31,10 +140,63 @@
 .home-icon-size-si{
     margin-top: 2.5px;
     margin-right: 2.5px;
-    width: 25px;
-    height: 25px;
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
 .home-icon{
     margin-right: 10px;
+}
+
+.selectors {
+    margin-left: auto;
+}
+
+.radio-button{
+    height: 12px;
+    width: 12px;
+    display: block;
+	margin: 12px auto;
+	border: solid 3px var(--font-color);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.radio-button:hover {
+    background-color: var(--font-color);
+}
+
+.recent-repo-wrapper {
+    display: flex;
+    flex-flow: row;
+    max-width: 90%;
+}
+
+.contact-icon {
+    margin-bottom: -2px;
+}
+
+@media only screen and (max-width: 480px) {
+    .home-icons{
+        margin: 0;
+        padding: 0 30px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home-main-title{
+        font-family: 'Nunito-Extra-Bold';
+        color: var(--font-color);
+        font-size: 3.5rem;
+        margin: 0;
+    }
+
+    .home-content{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 20px 50px;
+        width: 90%;
+        height: 90%;
+    }
 }

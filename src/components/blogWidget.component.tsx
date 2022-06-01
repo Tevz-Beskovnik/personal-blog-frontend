@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import "./blogWidget.css"
-import { Post, PostPreview } from "../types/post.interface"
+import { PostPreview } from "../types/post.interface"
 import Views from "./views.component";
 
 const BlogWidget: FC<PostPreview> = ({ id, title, description, date, views }) => {

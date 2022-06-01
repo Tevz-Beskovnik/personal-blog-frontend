@@ -5,13 +5,11 @@ import Landing from '../pages/landing';
 import Blog from '../pages/blog';
 import Top from '../pages/top';
 import Home from '../pages/home';
-import About from '../pages/about';
 
 const Body: FC = () => {
     return (
         <Switch>
             <Route path="/" element={ <Home/> }/>
-            <Route path="/about" element={ <About/> }/>
             <Route path="/landing" element={ <Landing/> }/>
             <Route path="/blog/:id" element={ <Blog/> }/>
             <Route path="/blog/top" element= { <Top/> }/>
