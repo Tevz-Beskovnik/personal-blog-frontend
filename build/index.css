@@ -1,0 +1,88 @@
+:root {
+	--font-color: white;
+	--background-color-p: white;
+	--background-color-s: #aeaeee;
+	--background-color-t: #9c1fa5;
+	--background-color-as: #e09966;
+	--background-color-at: #ed6f39;
+	--link-color: rgb(88, 166, 255);
+	--javascript: #f1e05a;
+	--typescript: #2b7489;
+	--cplusplus: #f34b7d;
+	--c: #555555;
+	--code-background: rgb(29, 38, 47);
+}
+
+@font-face {
+  	font-family: "Nunito-Black";
+  	src: url(./Nunito-Black.ttf) format("truetype");
+}
+
+@font-face {
+  	font-family: "Nunito-Bold";
+  	src: url(./Nunito-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  	font-family: "Nunito-Extra-Bold";
+  	src: url(./Nunito-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  	font-family: "Nunito-Extra-Light";
+  	src: url(./Nunito-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  	font-family: "Nunito-Light";
+  	src: url(./Nunito-Light.ttf) format("truetype");
+}
+
+@font-face {
+  	font-family: "Nunito";
+  	src: url(./Nunito-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  	font-family: "Nunito-Semi-Bold";
+  	src: url(./Nunito-SemiBold.ttf) format("truetype");
+}
+
+html{
+	min-height:100%;
+	max-height: 10000%;
+	height: 100%;
+	position: relative;
+}
+
+body{
+	--bg: linear-gradient(cyan, transparent ), linear-gradient(-45deg, magenta, transparent), linear-gradient(45deg, yellow, transparent);
+	--blend: multiply;
+    margin: 0;
+    padding: 0;
+	min-height: 100%;
+	height: 100vh;
+    width: 100vw;
+	background: var(--bg);
+	animation-name: var(--anim);
+	animation-duration: 0.7s;
+	background-repeat: no-repeat;
+	background-blend-mode: var(--blend);
+    background-attachment: fixed;
+}
+
+
+#root{
+	height: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+	body{
+		min-height: 100%;
+		height: 100%;
+	}
+
+	#root {
+		height: auto
+	}
+}
