@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from "react";
-import { SiC, SiCplusplus, SiCss3, SiEspressif, SiGithub, SiGnu, SiHtml5, SiJavascript, SiJsonwebtokens, SiNestjs, SiNodedotjs, SiReact, SiDiscord, SiGmail } from "react-icons/si"
+import { SiC, SiCplusplus, SiCss3, SiEspressif, SiGithub, SiGnu, SiHtml5, SiJavascript, SiJsonwebtokens, SiNestjs, SiNodedotjs, SiReact, SiDiscord, SiGmail, SiLinkedin } from "react-icons/si"
 import { useDispatch, useSelector } from "react-redux";
 import { reposGet } from "../reducers/repos";
 import Repo from "../components/repo.component";
@@ -118,6 +118,7 @@ const Home: FC = () => {
                 </section>
                 <section id="contact">
                     <h1 className="about-main-title">Want to get in touch?</h1>
+                    <p className="about-main-info">&nbsp;&nbsp;&nbsp;&nbsp;<SiLinkedin className="contact-icon" color="var(--font-color)"/> <a className="contact-link" href="https://www.linkedin.com/in/tevž-beškovnik-03737622b/">Tevž Beškovnik</a></p>
                     <p className="about-main-info">&nbsp;&nbsp;&nbsp;&nbsp;<SiGmail   className="contact-icon" color="var(--font-color)"/> tevz.beskovnik@gmail.com</p>
                     <p className="about-main-info">&nbsp;&nbsp;&nbsp;&nbsp;<SiDiscord className="contact-icon" color="var(--font-color)"/> ZVET#0952</p>
                 </section>

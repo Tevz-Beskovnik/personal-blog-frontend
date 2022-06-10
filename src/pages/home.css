@@ -173,6 +173,23 @@ input[type='radio']#section4:checked ~ #contact {
     margin-bottom: -2px;
 }
 
+
+.contact-link:focus {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.contact-link {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
 @media only screen and (max-width: 480px) {
     .home-icons{
         margin: 0;
