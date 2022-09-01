@@ -3,6 +3,7 @@ import { SiC, SiCplusplus, SiCss3, SiEspressif, SiGithub, SiGnu, SiHtml5, SiJava
 import { useDispatch, useSelector } from "react-redux";
 import { reposGet } from "../reducers/repos";
 import Repo from "../components/repo.component";
+import About from "../resources/about.json"
 import "./home.css";
 
 const Home: FC = () => {
@@ -97,11 +98,10 @@ const Home: FC = () => {
                 <section id="about">
                     <h1 className="about-main-title">A little about me:</h1>
                     <p className="about-main-info">I'm a { end } year old amateur developer based in Slovenia, that likes to play around with web development, computer graphics and the espressif platform.</p>
-                    <p className="about-main-info">I currently study at <a className="about-link" href="https://sers.si/">SERŠ</a>, the middle school for electronics and computer science in Maribor. I am currently attending the 4th year of education.</p>
-                    <p className="about-main-info">As of now i have { end1 } years of experience as a fullstack developer.</p>
-                    <p className="about-main-info">I work with Vue.js, React.js, Nest.js and GO backend development.</p>
-                    <p className="about-main-info">I have experience with programing microcontrollers: ESP32, Arduino and Pi Pico. I have also spent some time on OS development.</p>
-                    <p className="about-main-info">I've studied computer graphics, rendering and made a very simple game engine / rendering <a className="about-link" href="https://github.com/Tevzi2/Zwet-engine">tool</a></p>
+                    {   About.About.map(element => (
+                            <p className="about-main-info">{element}</p>  
+                        )) 
+                    }
                 </section>
                 <section id="recent">
                     <h1 className="about-main-title">Recent Projects:</h1>
